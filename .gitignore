@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Generated / runtime artifacts
+logs/*.log
+outputs/*.png
+outputs/*.jpg
+!outputs/.gitkeep
+
+# Large generated dataset (regenerate with scripts/generate_synthetic_dataset.py)
+data/char_dataset/*/
+!data/char_dataset/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
