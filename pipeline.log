@@ -1,0 +1,65 @@
+2026-09-13 12:43:32 | INFO     | scripts.generate_synthetic_dataset | Generated 2880 synthetic glyph images across 36 classes in /home/claude/plate-ocr-pipeline/data/char_dataset
+2026-09-13 12:43:33 | INFO     | scripts.train_classifier | Loaded 2880 samples across 36 classes
+2026-09-13 12:43:33 | INFO     | src.classifier | Classifier trained. Held-out test accuracy = 0.8576
+2026-09-13 12:43:33 | INFO     | src.classifier | Saved trained classifier to /home/claude/plate-ocr-pipeline/models/knn_classifier.pkl
+2026-09-13 12:43:39 | INFO     | src.classifier | Loaded trained classifier from /home/claude/plate-ocr-pipeline/models/knn_classifier.pkl
+2026-09-13 12:43:39 | INFO     | src.pipeline | Processing image: data/sample_images/plate_demo.png
+2026-09-13 12:43:39 | DEBUG    | src.plate_detector | Found 1 candidate regions after filtering
+2026-09-13 12:43:39 | INFO     | src.plate_detector | Selected region: x=164 y=183 w=346 h=81 aspect=4.27
+2026-09-13 12:43:39 | INFO     | src.segmentation | Segmented 10 character candidates from ROI
+2026-09-13 12:43:39 | INFO     | src.pipeline | Saved annotated output to outputs/plate_demo_annotated.png
+2026-09-13 12:43:39 | INFO     | src.pipeline | Result for data/sample_images/plate_demo.png -> 'KAW7AF7Z4Z' (confidence=60.72%, 10 chars, 0.091s)
+2026-09-13 12:43:53 | INFO     | src.classifier | Loaded trained classifier from /home/claude/plate-ocr-pipeline/models/knn_classifier.pkl
+2026-09-13 12:43:53 | INFO     | src.pipeline | Processing image: data/sample_images/plate_demo.png
+2026-09-13 12:43:53 | DEBUG    | src.plate_detector | Found 1 candidate regions after filtering
+2026-09-13 12:43:53 | INFO     | src.plate_detector | Selected region: x=164 y=183 w=346 h=81 aspect=4.27
+2026-09-13 12:43:53 | INFO     | src.segmentation | Segmented 10 character candidates from ROI
+2026-09-13 12:43:53 | INFO     | src.pipeline | Saved annotated output to outputs/annotated_plate_demo.png
+2026-09-13 12:43:53 | INFO     | src.pipeline | Result for data/sample_images/plate_demo.png -> 'KAW7AF7Z4Z' (confidence=60.72%, 10 chars, 0.058s)
+2026-09-13 12:43:53 | INFO     | src.pipeline | Processing image: data/sample_images/plate_demo2.png
+2026-09-13 12:43:53 | DEBUG    | src.plate_detector | Found 0 candidate regions after filtering
+2026-09-13 12:43:53 | WARNING  | src.plate_detector | No region candidates passed filtering; using fallback centre crop.
+2026-09-13 12:43:53 | INFO     | src.plate_detector | Selected region: x=128 y=180 w=384 h=120 aspect=3.20
+2026-09-13 12:43:53 | INFO     | src.segmentation | Segmented 0 character candidates from ROI
+2026-09-13 12:43:53 | WARNING  | src.pipeline | No characters segmented for data/sample_images/plate_demo2.png
+2026-09-13 12:43:53 | INFO     | src.pipeline | Processing image: data/sample_images/plate_demo3.png
+2026-09-13 12:43:53 | DEBUG    | src.plate_detector | Found 1 candidate regions after filtering
+2026-09-13 12:43:53 | INFO     | src.plate_detector | Selected region: x=140 y=189 w=347 h=80 aspect=4.34
+2026-09-13 12:43:53 | INFO     | src.segmentation | Segmented 10 character candidates from ROI
+2026-09-13 12:43:54 | INFO     | src.pipeline | Saved annotated output to outputs/annotated_plate_demo3.png
+2026-09-13 12:43:54 | INFO     | src.pipeline | Result for data/sample_images/plate_demo3.png -> 'OLFQAFQWW7' (confidence=54.50%, 10 chars, 0.046s)
+2026-09-13 12:44:27 | INFO     | src.classifier | Classifier trained. Held-out test accuracy = 1.0000
+2026-09-13 12:44:27 | INFO     | src.classifier | Classifier trained. Held-out test accuracy = 1.0000
+2026-09-13 12:44:27 | INFO     | src.classifier | Saved trained classifier to /tmp/pytest-of-root/pytest-0/test_classifier_save_and_load_0/model.pkl
+2026-09-13 12:44:27 | INFO     | src.classifier | Loaded trained classifier from /tmp/pytest-of-root/pytest-0/test_classifier_save_and_load_0/model.pkl
+2026-09-13 12:44:27 | INFO     | src.classifier | Loaded trained classifier from /home/claude/plate-ocr-pipeline/models/knn_classifier.pkl
+2026-09-13 12:44:27 | INFO     | src.pipeline | Processing image: /home/claude/plate-ocr-pipeline/data/sample_images/plate_demo.png
+2026-09-13 12:44:27 | DEBUG    | src.plate_detector | Found 1 candidate regions after filtering
+2026-09-13 12:44:27 | INFO     | src.plate_detector | Selected region: x=164 y=183 w=346 h=81 aspect=4.27
+2026-09-13 12:44:27 | INFO     | src.segmentation | Segmented 10 character candidates from ROI
+2026-09-13 12:44:27 | INFO     | src.pipeline | Result for /home/claude/plate-ocr-pipeline/data/sample_images/plate_demo.png -> 'KAW7AF7Z4Z' (confidence=60.72%, 10 chars, 0.049s)
+2026-09-13 12:44:27 | DEBUG    | src.plate_detector | Found 1 candidate regions after filtering
+2026-09-13 12:44:27 | WARNING  | src.plate_detector | No region candidates passed filtering; using fallback centre crop.
+2026-09-13 12:44:27 | INFO     | src.segmentation | Segmented 5 character candidates from ROI
+2026-09-13 12:44:27 | INFO     | src.segmentation | Segmented 4 character candidates from ROI
+2026-09-13 12:44:27 | WARNING  | src.segmentation | Empty ROI passed to segment_characters.
+2026-09-13 12:44:27 | INFO     | src.segmentation | Segmented 0 character candidates from ROI
+2026-09-13 12:45:40 | DEBUG    | src.plate_detector | Found 1 candidate regions after filtering
+2026-09-13 12:45:40 | INFO     | src.plate_detector | Selected region: x=164 y=183 w=346 h=81 aspect=4.27
+2026-09-13 12:45:40 | INFO     | src.segmentation | Segmented 10 character candidates from ROI
+2026-09-13 12:54:47 | INFO     | src.classifier | Classifier trained. Held-out test accuracy = 1.0000
+2026-09-13 12:54:47 | INFO     | src.classifier | Classifier trained. Held-out test accuracy = 1.0000
+2026-09-13 12:54:47 | INFO     | src.classifier | Saved trained classifier to /tmp/pytest-of-root/pytest-2/test_classifier_save_and_load_0/model.pkl
+2026-09-13 12:54:47 | INFO     | src.classifier | Loaded trained classifier from /tmp/pytest-of-root/pytest-2/test_classifier_save_and_load_0/model.pkl
+2026-09-13 12:54:47 | INFO     | src.classifier | Loaded trained classifier from /home/claude/plate-ocr-pipeline/models/knn_classifier.pkl
+2026-09-13 12:54:47 | INFO     | src.pipeline | Processing image: /home/claude/plate-ocr-pipeline/data/sample_images/plate_demo.png
+2026-09-13 12:54:47 | DEBUG    | src.plate_detector | Found 1 candidate regions after filtering
+2026-09-13 12:54:47 | INFO     | src.plate_detector | Selected region: x=164 y=183 w=346 h=81 aspect=4.27
+2026-09-13 12:54:47 | INFO     | src.segmentation | Segmented 10 character candidates from ROI
+2026-09-13 12:54:47 | INFO     | src.pipeline | Result for /home/claude/plate-ocr-pipeline/data/sample_images/plate_demo.png -> 'KAW7AF7Z4Z' (confidence=60.72%, 10 chars, 0.098s)
+2026-09-13 12:54:47 | DEBUG    | src.plate_detector | Found 1 candidate regions after filtering
+2026-09-13 12:54:47 | WARNING  | src.plate_detector | No region candidates passed filtering; using fallback centre crop.
+2026-09-13 12:54:47 | INFO     | src.segmentation | Segmented 5 character candidates from ROI
+2026-09-13 12:54:47 | INFO     | src.segmentation | Segmented 4 character candidates from ROI
+2026-09-13 12:54:47 | WARNING  | src.segmentation | Empty ROI passed to segment_characters.
+2026-09-13 12:54:47 | INFO     | src.segmentation | Segmented 0 character candidates from ROI
